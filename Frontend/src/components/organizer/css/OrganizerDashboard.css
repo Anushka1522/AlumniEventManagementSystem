@@ -1,0 +1,144 @@
+/* ==== OrganizerDashboard.css ==== */
+
+/* Dashboard Container */
+.organizer-dashboard {
+  padding: 40px 20px;
+  background-color: #f0f4ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+  box-sizing: border-box;
+  margin-left:150px;
+}
+
+/* Fade and Slide Animation */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to right, #00113c, #6dd5ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  animation: fadeSlide 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Card Row Layout */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: fadeSlide 1.5s ease-in-out forwards;
+}
+
+/* Stylish Cards */
+.card {
+  background: linear-gradient(to right, #07246ca0, #6dd5edbd);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 280px;
+  height: 180px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  animation: fadeSlide 1.5s ease-in-out forwards;
+  opacity: 0;
+  /* margin-left: 100px; */
+}
+
+/* Stagger card animation */
+.card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Card Text Styles */
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #edebee;
+}
+
+.card p {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ece8f2;
+  margin: 0;
+}
+
+/* Hover effect */
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  transform: scale(1.03);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .card {
+    width: 45%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .card p {
+    font-size: 2.2rem;
+  }
+
+  .welcome-message {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+
+  .welcome-message {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .organizer-dashboard {
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 2rem;
+  }
+
+  .welcome-message {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+}

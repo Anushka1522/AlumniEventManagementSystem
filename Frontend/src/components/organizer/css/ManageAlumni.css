@@ -1,0 +1,172 @@
+/* ManageAlumni.css */
+
+.manage-alumni-container {
+  width: 100%;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  /* padding: 10px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+  font-weight: 700 !important;
+  color: #04416cd9;;
+  margin-bottom: 24px !important;
+  text-align: center;
+}
+
+.form-paper {
+  padding: 20px;
+  margin-bottom: 32px;
+  background-color: #ffffff !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgb(25 118 210 / 0.15);
+}
+
+.filter-box {
+  padding: 12px 0;
+}
+
+.filter-box .MuiFormControl-root {
+  min-width: 220px;
+}
+
+.filter-box input[type="text"],
+.filter-box input[type="search"],
+.filter-box .MuiInputBase-root {
+  min-width: 300px;
+}
+
+.MuiTable-root {
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.MuiTableCell-root {
+  vertical-align: middle;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+.MuiTableCell-head {
+  font-weight: 700;
+  background-color: #04416cd9;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.MuiTableRow-root {
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #d0e1ff;
+  cursor: pointer;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #04416cd9;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #04416cd9;
+}
+
+.MuiButton-outlinedPrimary {
+  border-color: #1976d2;
+  color: #1976d2;
+}
+
+.MuiButton-outlinedPrimary:hover {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.MuiButton-outlinedSecondary {
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+.MuiButton-outlinedSecondary:hover {
+  background-color: rgba(211, 47, 47, 0.08);
+}
+
+.MuiButton-text {
+  color: #555555;
+}
+
+.MuiPagination-root {
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 960px) {
+  .manage-alumni-container {
+    padding: 20px 16px;
+  }
+
+  .filter-box {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .filter-box .MuiFormControl-root {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+
+  .filter-box input {
+    width: 100% !important;
+  }
+}
+
+
+
+/*-------------------------------------------------*/
+.custom-branch-select {
+  background-color: #f9f9f9;
+  /* width: 200px; */
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+}
+
+.custom-branch-select .MuiInputLabel-root {
+  color: #555;
+  font-weight: 500;
+}
+
+.custom-branch-select .MuiOutlinedInput-root {
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.custom-branch-select .MuiOutlinedInput-root fieldset {
+  border-color: #ccc;
+}
+
+.custom-branch-select .MuiOutlinedInput-root:hover fieldset {
+  border-color: #888;
+}
+
+.custom-branch-select .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #1976d2;
+}
+
+.custom-branch-select .MuiSelect-select {
+  padding: 12px;
+  font-weight: 500;
+}

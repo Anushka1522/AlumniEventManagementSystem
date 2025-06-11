@@ -1,0 +1,91 @@
+.past-events {
+    padding: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;    
+   
+  }
+  
+  .past-events h2 {
+    text-align: center;
+    color: #333;
+  }
+  .past-events-title{
+    color: #333;
+  }
+  
+  .event-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .event-card {
+    /* background-color: #110134d9; */
+     background: linear-gradient(to right,#120135d9, #093d7d);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;
+
+     margin-left: 90px;
+     margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-card h3 {
+    margin: 0 0 0.5rem;
+    color: #f5a623;
+  }
+  
+  .strong{
+    color: #f5a623;
+  }
+  .event-card p {
+    margin: 0.5rem 0;
+    color: #444;
+    color: #ccc;
+  }
+  
+
+
+  /* Grid for event cards */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Pagination buttons and text (already partially styled) */
+.pagination-button {
+  background-color: #01152a;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.pagination-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}

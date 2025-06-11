@@ -1,0 +1,23 @@
+/* AlumniDashboard.css */
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar-wrapper {
+  width: 250px;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+  }
+}

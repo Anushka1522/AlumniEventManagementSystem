@@ -1,0 +1,125 @@
+/* AttendedEvents.css */
+
+.attended-events-wrapper {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.attended-events-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.attended-events-loading,
+.attended-events-error,
+.attended-events-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 2rem;
+}
+
+.attended-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.attended-event-card {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.attended-event-card:hover {
+  transform: translateY(-5px);
+}
+
+.attended-event-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.attended-event-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.present {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.absent {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Pagination styles */
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #eee;
+  border: none;
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attended-events-wrapper {
+    padding: 1rem;
+  }
+
+  .attended-events-title {
+    font-size: 1.5rem;
+  }
+
+  .attended-event-card {
+    padding: 1rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .attended-event-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .attended-event-card p {
+    font-size: 0.95rem;
+  }
+}

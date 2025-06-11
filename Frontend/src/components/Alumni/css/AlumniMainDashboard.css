@@ -1,0 +1,75 @@
+.alumni-dashboard-container {
+  /* padding: 2rem;
+  max-width: 1200px;
+  height:300px;
+  margin: auto; */
+   padding: 40px 20px;
+  background-color: #f0f4ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+  /* width: 100px; */
+  box-sizing: border-box;
+  margin-left:150px;
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.dashboard-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.dashboard-card {
+  /* background: linear-gradient(135deg, #3b82f6, #1e40af); */
+   background: linear-gradient(to right, #07246ca0, #6dd5edbd);
+  color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  background-color: white;
+  color: #1e40af;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper.attended {
+  background-color: white;
+  color: #047857;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 2rem;
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+}

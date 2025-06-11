@@ -1,0 +1,17 @@
+.login-selector-container {
+    margin: 2rem auto;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .role-dropdown {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-form-display {
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,29 @@
+.enquiries-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enquiries-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.enquiries-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.enquiries-table th,
+.enquiries-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.enquiries-table th {
+  background-color: #f5f5f5;
+  color: #333;
+}

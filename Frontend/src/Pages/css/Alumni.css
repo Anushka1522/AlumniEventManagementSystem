@@ -1,0 +1,11 @@
+/* Alumni.css */
+
+.alumni-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa; /* Soft background for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  

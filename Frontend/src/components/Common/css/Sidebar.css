@@ -1,0 +1,66 @@
+/* Sidebar.css */
+
+.sidebar
+{
+  width: 250px;
+  height: 100vh;
+  /* background: linear-gradient(to right, #1f3c88, #6dd5ed); */
+  position: relative;
+  background: linear-gradient(145deg, #01283f, #e4e5e6);
+  color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title 
+{
+  font-size: 1.5rem;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.sidebar-nav {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link .icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Normal icon color */
+.nav-link .icon 
+{
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #f1f2f5; 
+  transition: color 0.3s ease;
+}
+
+/* On hover - change icon color */
+.nav-link:hover .icon 
+{
+  color: #ffffff; 
+}
