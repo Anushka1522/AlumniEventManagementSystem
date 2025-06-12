@@ -30,13 +30,4 @@ graduates with upcoming activities, enabling streamlined engagement and record-k
 - **Database:** MySQL
 - **Authentication:** local-based
 
-## 🏁 Getting Started
 
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/alumni-event-management.git
-   cd alumni-event-management
